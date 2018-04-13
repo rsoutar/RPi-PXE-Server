@@ -681,7 +681,7 @@ EOF";
 ########################################
 LABEL Debian x64
     KERNEL $NFS_ETH0/$DEBIAN_X64/live/vmlinuz-$DEBIAN_KVER-amd64
-    APPEND initrd=$NFS_ETH0/$DEBIAN_X64/live/initrd.img-$DEBIAN_KVER-amd64 netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$DEBIAN_X64 ro boot=live config -- locales=en_EN.UTF-8 keyboard-layouts=en utc=no timezone=Asia/Bangkok
+    APPEND initrd=$NFS_ETH0/$DEBIAN_X64/live/initrd.img-$DEBIAN_KVER-amd64 netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$DEBIAN_X64 ro boot=live config -- locales=en_US.UTF-8 keyboard-layouts=en utc=no timezone=Asia/Bangkok
     TEXT HELP
         Boot to Debian x64 Live LXDE
         User: user, Password: live
@@ -696,7 +696,7 @@ EOF";
 ########################################
 LABEL Debian x86
     KERNEL $NFS_ETH0/$DEBIAN_X86/live/vmlinuz-$DEBIAN_KVER-686
-    APPEND initrd=$NFS_ETH0/$DEBIAN_X86/live/initrd.img-$DEBIAN_KVER-686 netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$DEBIAN_X86 ro boot=live config -- locales=en_EN.UTF-8 keyboard-layouts=en utc=no timezone=Asia/Bangkok
+    APPEND initrd=$NFS_ETH0/$DEBIAN_X86/live/initrd.img-$DEBIAN_KVER-686 netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$DEBIAN_X86 ro boot=live config -- locales=en_US.UTF-8 keyboard-layouts=en utc=no timezone=Asia/Bangkok
     TEXT HELP
         Boot to Debian x86 Live LXDE
         User: user, Password: live
@@ -711,7 +711,7 @@ EOF";
 ########################################
 LABEL Parrot Lite x64
     KERNEL /nfs/$PARROT_LITE_X64/live/vmlinuz
-    APPEND initrd=/nfs/$PARROT_LITE_X64/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$PARROT_LITE_X64 ro boot=live config -- locales=en_EN.UTF-8 keyboard-layouts=de pkeys=de setxkbmap=de utc=no timezone=Asia/Bangkok
+    APPEND initrd=/nfs/$PARROT_LITE_X64/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$PARROT_LITE_X64 ro boot=live config -- locales=en_US.UTF-8 keyboard-layouts=de pkeys=de setxkbmap=de utc=no timezone=Asia/Bangkok
     TEXT HELP
         Boot to Parrot Lite x64 Live (Home/Workstation)
         User: user, Password: live
@@ -726,7 +726,7 @@ EOF";
 ########################################
 LABEL Parrot Lite x86
     KERNEL /nfs/$PARROT_LITE_X86/live/vmlinuz
-    APPEND initrd=/nfs/$PARROT_LITE_X86/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$PARROT_LITE_X86 ro boot=live config -- locales=en_EN.UTF-8 keyboard-layouts=de pkeys=de setxkbmap=de utc=no timezone=Asia/Bangkok
+    APPEND initrd=/nfs/$PARROT_LITE_X86/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$PARROT_LITE_X86 ro boot=live config -- locales=en_US.UTF-8 keyboard-layouts=de pkeys=de setxkbmap=de utc=no timezone=Asia/Bangkok
     TEXT HELP
         Boot to Parrot Lite x86 Live (Home/Workstation)
         User: user, Password: live
@@ -741,7 +741,7 @@ EOF";
 ########################################
 LABEL Parrot Full x64
     KERNEL /nfs/$PARROT_FULL_X64/live/vmlinuz
-    APPEND initrd=/nfs/$PARROT_FULL_X64/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$PARROT_FULL_X64 ro boot=live config -- locales=en_EN.UTF-8 keyboard-layouts=de pkeys=de setxkbmap=de utc=no timezone=Asia/Bangkok
+    APPEND initrd=/nfs/$PARROT_FULL_X64/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$PARROT_FULL_X64 ro boot=live config -- locales=en_US.UTF-8 keyboard-layouts=de pkeys=de setxkbmap=de utc=no timezone=Asia/Bangkok
     TEXT HELP
         Boot to Parrot Full x64 Live (Security)
         User: user, Password: live
@@ -756,7 +756,7 @@ EOF";
 ########################################
 LABEL Parrot Full x86
     KERNEL /nfs/$PARROT_FULL_X86/live/vmlinuz
-    APPEND initrd=/nfs/$PARROT_FULL_X86/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$PARROT_FULL_X86 ro boot=live config -- locales=en_EN.UTF-8 keyboard-layouts=de pkeys=de setxkbmap=de utc=no timezone=Asia/Bangkok
+    APPEND initrd=/nfs/$PARROT_FULL_X86/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$PARROT_FULL_X86 ro boot=live config -- locales=en_US.UTF-8 keyboard-layouts=de pkeys=de setxkbmap=de utc=no timezone=Asia/Bangkok
     TEXT HELP
         Boot to Parrot Full x86 Live (Security)
         User: user, Password: live
@@ -786,7 +786,7 @@ EOF";
 ########################################
 LABEL Kali x64
     KERNEL $NFS_ETH0/$KALI_X64/live/vmlinuz
-    APPEND initrd=$NFS_ETH0/$KALI_X64/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$KALI_X64 ro boot=live noconfig=sudo username=root hostname=kali -- locales=en_EN.UTF-8 keyboard-layouts=de utc=no timezone=Asia/Bangkok
+    APPEND initrd=$NFS_ETH0/$KALI_X64/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$KALI_X64 ro boot=live noconfig=sudo username=root hostname=kali -- locales=en_US.UTF-8 keyboard-layouts=de utc=no timezone=Asia/Bangkok
     TEXT HELP
         Boot to Kali x64 Live
         User: root, Password: toor
@@ -923,7 +923,7 @@ EOF";
 ########################################
 LABEL Raspberry Pi Desktop
     KERNEL $NFS_ETH0/$RPDESKTOP_X86/live/vmlinuz2
-    APPEND initrd=$NFS_ETH0/$RPDESKTOP_X86/live/initrd2.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$RPDESKTOP_X86 ro boot=live config -- locales=en_EN.UTF-8 keyboard-layouts=en utc=no timezone=Asia/Bangkok
+    APPEND initrd=$NFS_ETH0/$RPDESKTOP_X86/live/initrd2.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$RPDESKTOP_X86 ro boot=live config -- locales=en_US.UTF-8 keyboard-layouts=en utc=no timezone=Asia/Bangkok
     TEXT HELP
         Boot to Raspberry Pi Desktop
         User: pi, Password: raspberry
@@ -938,7 +938,7 @@ EOF";
 ########################################
 LABEL Clonezilla x64
     KERNEL $NFS_ETH0/$CLONEZILLA_X64/live/vmlinuz
-    APPEND initrd=$NFS_ETH0/$CLONEZILLA_X64/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$CLONEZILLA_X64 ro boot=live config username=user hostname=clonezilla union=overlay components noswap edd=on nomodeset nodmraid ocs_live_run=ocs-live-general ocs_live_extra_param= ocs_live_batch=no net.ifnames=0 nosplash noprompt -- locales=en_EN.UTF-8 keyboard-layouts=en utc=no timezone=Asia/Bangkok
+    APPEND initrd=$NFS_ETH0/$CLONEZILLA_X64/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$CLONEZILLA_X64 ro boot=live config username=user hostname=clonezilla union=overlay components noswap edd=on nomodeset nodmraid ocs_live_run=ocs-live-general ocs_live_extra_param= ocs_live_batch=no net.ifnames=0 nosplash noprompt -- locales=en_US.UTF-8 keyboard-layouts=en utc=no timezone=Asia/Bangkok
     TEXT HELP
         Boot to Clonezilla x64
         User: user, Password: live
@@ -953,7 +953,7 @@ EOF";
 ########################################
 LABEL Clonezilla x86
     KERNEL $NFS_ETH0/$CLONEZILLA_X86/live/vmlinuz
-    APPEND initrd=$NFS_ETH0/$CLONEZILLA_X86/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$CLONEZILLA_X86 ro boot=live config username=user hostname=clonezilla union=overlay components noswap edd=on nomodeset nodmraid ocs_live_run=ocs-live-general ocs_live_extra_param= ocs_live_batch=no net.ifnames=0 nosplash noprompt -- locales=en_EN.UTF-8 keyboard-layouts=en utc=no timezone=Asia/Bangkok
+    APPEND initrd=$NFS_ETH0/$CLONEZILLA_X86/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$CLONEZILLA_X86 ro boot=live config username=user hostname=clonezilla union=overlay components noswap edd=on nomodeset nodmraid ocs_live_run=ocs-live-general ocs_live_extra_param= ocs_live_batch=no net.ifnames=0 nosplash noprompt -- locales=en_US.UTF-8 keyboard-layouts=en utc=no timezone=Asia/Bangkok
     TEXT HELP
         Boot to Clonezilla x86
         User: user, Password: live
@@ -987,7 +987,7 @@ EOF";
 ## NOT WORKING
 LABEL Tails x64
     KERNEL $NFS_ETH0/$TAILS_X64/live/vmlinuz
-    APPEND initrd=$NFS_ETH0/$TAILS_X64/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$TAILS_X64 ro boot=live config loglevel=7 -- break locales=en_EN.UTF-8 keyboard-layouts=en
+    APPEND initrd=$NFS_ETH0/$TAILS_X64/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$TAILS_X64 ro boot=live config loglevel=7 -- break locales=en_US.UTF-8 keyboard-layouts=en
     TEXT HELP
         Boot to Tails x64 Live (modprobe r8169; exit)
     ENDTEXT
