@@ -197,6 +197,9 @@ TAILS_X64_URL=https://mirrors.kernel.org/tails/stable/tails-amd64-3.6.2/tails-am
 CENTOS_X64=centos-x64
 CENTOS_X64_URL=http://ftp.rrzn.uni-hannover.de/centos/7/isos/x86_64/CentOS-7-x86_64-LiveGNOME-1708.iso
 
+MINT_X64=mint-x64
+MINT_X64_URL=http://mirror1.ku.ac.th/linuxmint-iso/stable/18.3/linuxmint-18.3-cinnamon-64bit.iso
+
 
 ######################################################################
 ######################################################################
@@ -541,7 +544,7 @@ EOF";
 ########################################
 LABEL Ubuntu LTS x64
     KERNEL $NFS_ETH0/$UBUNTU_LTS_X64/casper/vmlinuz.efi
-    APPEND initrd=$NFS_ETH0/$UBUNTU_LTS_X64/casper/initrd.lz netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$UBUNTU_LTS_X64 ro file=/cdrom/preseed/ubuntu.seed boot=casper -- debian-installer/language=de console-setup/layoutcode=de keyboard-configuration/layoutcode=de keyboard-configuration/variant=German
+    APPEND initrd=$NFS_ETH0/$UBUNTU_LTS_X64/casper/initrd.lz netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$UBUNTU_LTS_X64 ro file=/cdrom/preseed/ubuntu.seed boot=casper -- debian-installer/language=en console-setup/layoutcode=en keyboard-configuration/layoutcode=en keyboard-configuration/variant=German
     TEXT HELP
         Boot to Ubuntu LTS x64 Live
         User: ubuntu
@@ -556,7 +559,7 @@ EOF";
 ########################################
 LABEL Ubuntu LTS x86
     KERNEL $NFS_ETH0/$UBUNTU_LTS_X86/casper/vmlinuz
-    APPEND initrd=$NFS_ETH0/$UBUNTU_LTS_X86/casper/initrd.lz netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$UBUNTU_LTS_X86 ro file=/cdrom/preseed/ubuntu.seed boot=casper -- debian-installer/language=de console-setup/layoutcode=de keyboard-configuration/layoutcode=de keyboard-configuration/variant=German
+    APPEND initrd=$NFS_ETH0/$UBUNTU_LTS_X86/casper/initrd.lz netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$UBUNTU_LTS_X86 ro file=/cdrom/preseed/ubuntu.seed boot=casper -- debian-installer/language=en console-setup/layoutcode=en keyboard-configuration/layoutcode=en keyboard-configuration/variant=German
     TEXT HELP
         Boot to Ubuntu LTS x86 Live
         User: ubuntu
@@ -571,7 +574,7 @@ EOF";
 ########################################
 LABEL Ubuntu x64
     KERNEL $NFS_ETH0/$UBUNTU_X64/casper/vmlinuz.efi
-    APPEND initrd=$NFS_ETH0/$UBUNTU_X64/casper/initrd.lz netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$UBUNTU_X64 ro file=/cdrom/preseed/ubuntu.seed boot=casper -- debian-installer/language=de console-setup/layoutcode=de keyboard-configuration/layoutcode=de keyboard-configuration/variant=German
+    APPEND initrd=$NFS_ETH0/$UBUNTU_X64/casper/initrd.lz netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$UBUNTU_X64 ro file=/cdrom/preseed/ubuntu.seed boot=casper -- debian-installer/language=en console-setup/layoutcode=en keyboard-configuration/layoutcode=en keyboard-configuration/variant=German
     TEXT HELP
         Boot to Ubuntu x64 Live
         User: ubuntu
@@ -586,7 +589,7 @@ EOF";
 ########################################
 LABEL Ubuntu x86
     KERNEL $NFS_ETH0/$UBUNTU_X86/casper/vmlinuz
-    APPEND initrd=$NFS_ETH0/$UBUNTU_X86/casper/initrd.lz netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$UBUNTU_X86 ro file=/cdrom/preseed/ubuntu.seed boot=casper -- debian-installer/language=de console-setup/layoutcode=de keyboard-configuration/layoutcode=de keyboard-configuration/variant=German
+    APPEND initrd=$NFS_ETH0/$UBUNTU_X86/casper/initrd.lz netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$UBUNTU_X86 ro file=/cdrom/preseed/ubuntu.seed boot=casper -- debian-installer/language=en console-setup/layoutcode=en keyboard-configuration/layoutcode=en keyboard-configuration/variant=German
     TEXT HELP
         Boot to Ubuntu x86 Live
         User: ubuntu
@@ -617,7 +620,7 @@ EOF";
 ########################################
 LABEL lubuntu x64
     KERNEL $NFS_ETH0/$LUBUNTU_X64/casper/vmlinuz.efi
-    APPEND initrd=$NFS_ETH0/$LUBUNTU_X64/casper/initrd.lz netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$LUBUNTU_X64 ro file=/cdrom/preseed/lubuntu.seed boot=casper -- debian-installer/language=de console-setup/layoutcode=de keyboard-configuration/layoutcode=de keyboard-configuration/variant=German
+    APPEND initrd=$NFS_ETH0/$LUBUNTU_X64/casper/initrd.lz netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$LUBUNTU_X64 ro file=/cdrom/preseed/lubuntu.seed boot=casper -- debian-installer/language=en console-setup/layoutcode=en keyboard-configuration/layoutcode=en keyboard-configuration/variant=German
     TEXT HELP
         Boot to lubuntu x64 Live
         User: lubuntu
@@ -632,7 +635,7 @@ EOF";
 ########################################
 LABEL lubuntu x86
     KERNEL $NFS_ETH0/$LUBUNTU_X86/casper/vmlinuz
-    APPEND initrd=$NFS_ETH0/$LUBUNTU_X86/casper/initrd.lz netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$LUBUNTU_X86 ro file=/cdrom/preseed/lubuntu.seed boot=casper -- debian-installer/language=de console-setup/layoutcode=de keyboard-configuration/layoutcode=de keyboard-configuration/variant=German
+    APPEND initrd=$NFS_ETH0/$LUBUNTU_X86/casper/initrd.lz netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$LUBUNTU_X86 ro file=/cdrom/preseed/lubuntu.seed boot=casper -- debian-installer/language=en console-setup/layoutcode=en keyboard-configuration/layoutcode=en keyboard-configuration/variant=German
     TEXT HELP
         Boot to lubuntu x86 Live
         User: lubuntu
@@ -647,7 +650,7 @@ EOF";
 ########################################
 LABEL lubuntu x64 Daily-Live
     KERNEL $NFS_ETH0/$LUBUNTU_DAILY_X64/casper/vmlinuz.efi
-    APPEND initrd=$NFS_ETH0/$LUBUNTU_DAILY_X64/casper/initrd.lz netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$LUBUNTU_DAILY_X64 ro file=/cdrom/preseed/lubuntu.seed boot=casper -- debian-installer/language=de console-setup/layoutcode=de keyboard-configuration/layoutcode=de keyboard-configuration/variant=German
+    APPEND initrd=$NFS_ETH0/$LUBUNTU_DAILY_X64/casper/initrd.lz netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$LUBUNTU_DAILY_X64 ro file=/cdrom/preseed/lubuntu.seed boot=casper -- debian-installer/language=en console-setup/layoutcode=en keyboard-configuration/layoutcode=en keyboard-configuration/variant=German
     TEXT HELP
         Boot to lubuntu x64 Daily-Live
         User: lubuntu
@@ -663,7 +666,7 @@ EOF";
 ########################################
 LABEL  Ubuntu non-PAE x86
     KERNEL $NFS_ETH0/$UBUNTU_NONPAE/casper/vmlinuz
-    APPEND initrd=$NFS_ETH0/$UBUNTU_NONPAE/casper/initrd.lz netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$UBUNTU_NONPAE ro file=/cdrom/preseed/ubuntu.seed boot=casper -- debian-installer/language=de console-setup/layoutcode=de keyboard-configuration/layoutcode=de keyboard-configuration/variant=German
+    APPEND initrd=$NFS_ETH0/$UBUNTU_NONPAE/casper/initrd.lz netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$UBUNTU_NONPAE ro file=/cdrom/preseed/ubuntu.seed boot=casper -- debian-installer/language=en console-setup/layoutcode=en keyboard-configuration/layoutcode=en keyboard-configuration/variant=German
     TEXT HELP
         Boot to Ubuntu non-PAE x86 Live
         User: ubuntu
@@ -678,7 +681,7 @@ EOF";
 ########################################
 LABEL Debian x64
     KERNEL $NFS_ETH0/$DEBIAN_X64/live/vmlinuz-$DEBIAN_KVER-amd64
-    APPEND initrd=$NFS_ETH0/$DEBIAN_X64/live/initrd.img-$DEBIAN_KVER-amd64 netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$DEBIAN_X64 ro boot=live config -- locales=de_DE.UTF-8 keyboard-layouts=de utc=no timezone=Europe/Berlin
+    APPEND initrd=$NFS_ETH0/$DEBIAN_X64/live/initrd.img-$DEBIAN_KVER-amd64 netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$DEBIAN_X64 ro boot=live config -- locales=en_EN.UTF-8 keyboard-layouts=en utc=no timezone=Asia/Bangkok
     TEXT HELP
         Boot to Debian x64 Live LXDE
         User: user, Password: live
@@ -693,7 +696,7 @@ EOF";
 ########################################
 LABEL Debian x86
     KERNEL $NFS_ETH0/$DEBIAN_X86/live/vmlinuz-$DEBIAN_KVER-686
-    APPEND initrd=$NFS_ETH0/$DEBIAN_X86/live/initrd.img-$DEBIAN_KVER-686 netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$DEBIAN_X86 ro boot=live config -- locales=de_DE.UTF-8 keyboard-layouts=de utc=no timezone=Europe/Berlin
+    APPEND initrd=$NFS_ETH0/$DEBIAN_X86/live/initrd.img-$DEBIAN_KVER-686 netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$DEBIAN_X86 ro boot=live config -- locales=en_EN.UTF-8 keyboard-layouts=en utc=no timezone=Asia/Bangkok
     TEXT HELP
         Boot to Debian x86 Live LXDE
         User: user, Password: live
@@ -708,7 +711,7 @@ EOF";
 ########################################
 LABEL Parrot Lite x64
     KERNEL /nfs/$PARROT_LITE_X64/live/vmlinuz
-    APPEND initrd=/nfs/$PARROT_LITE_X64/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$PARROT_LITE_X64 ro boot=live config -- locales=de_DE.UTF-8 keyboard-layouts=de pkeys=de setxkbmap=de utc=no timezone=Europe/Berlin
+    APPEND initrd=/nfs/$PARROT_LITE_X64/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$PARROT_LITE_X64 ro boot=live config -- locales=en_EN.UTF-8 keyboard-layouts=de pkeys=de setxkbmap=de utc=no timezone=Asia/Bangkok
     TEXT HELP
         Boot to Parrot Lite x64 Live (Home/Workstation)
         User: user, Password: live
@@ -723,7 +726,7 @@ EOF";
 ########################################
 LABEL Parrot Lite x86
     KERNEL /nfs/$PARROT_LITE_X86/live/vmlinuz
-    APPEND initrd=/nfs/$PARROT_LITE_X86/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$PARROT_LITE_X86 ro boot=live config -- locales=de_DE.UTF-8 keyboard-layouts=de pkeys=de setxkbmap=de utc=no timezone=Europe/Berlin
+    APPEND initrd=/nfs/$PARROT_LITE_X86/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$PARROT_LITE_X86 ro boot=live config -- locales=en_EN.UTF-8 keyboard-layouts=de pkeys=de setxkbmap=de utc=no timezone=Asia/Bangkok
     TEXT HELP
         Boot to Parrot Lite x86 Live (Home/Workstation)
         User: user, Password: live
@@ -738,7 +741,7 @@ EOF";
 ########################################
 LABEL Parrot Full x64
     KERNEL /nfs/$PARROT_FULL_X64/live/vmlinuz
-    APPEND initrd=/nfs/$PARROT_FULL_X64/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$PARROT_FULL_X64 ro boot=live config -- locales=de_DE.UTF-8 keyboard-layouts=de pkeys=de setxkbmap=de utc=no timezone=Europe/Berlin
+    APPEND initrd=/nfs/$PARROT_FULL_X64/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$PARROT_FULL_X64 ro boot=live config -- locales=en_EN.UTF-8 keyboard-layouts=de pkeys=de setxkbmap=de utc=no timezone=Asia/Bangkok
     TEXT HELP
         Boot to Parrot Full x64 Live (Security)
         User: user, Password: live
@@ -753,7 +756,7 @@ EOF";
 ########################################
 LABEL Parrot Full x86
     KERNEL /nfs/$PARROT_FULL_X86/live/vmlinuz
-    APPEND initrd=/nfs/$PARROT_FULL_X86/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$PARROT_FULL_X86 ro boot=live config -- locales=de_DE.UTF-8 keyboard-layouts=de pkeys=de setxkbmap=de utc=no timezone=Europe/Berlin
+    APPEND initrd=/nfs/$PARROT_FULL_X86/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$PARROT_FULL_X86 ro boot=live config -- locales=en_EN.UTF-8 keyboard-layouts=de pkeys=de setxkbmap=de utc=no timezone=Asia/Bangkok
     TEXT HELP
         Boot to Parrot Full x86 Live (Security)
         User: user, Password: live
@@ -783,7 +786,7 @@ EOF";
 ########################################
 LABEL Kali x64
     KERNEL $NFS_ETH0/$KALI_X64/live/vmlinuz
-    APPEND initrd=$NFS_ETH0/$KALI_X64/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$KALI_X64 ro boot=live noconfig=sudo username=root hostname=kali -- locales=de_DE.UTF-8 keyboard-layouts=de utc=no timezone=Europe/Berlin
+    APPEND initrd=$NFS_ETH0/$KALI_X64/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$KALI_X64 ro boot=live noconfig=sudo username=root hostname=kali -- locales=en_EN.UTF-8 keyboard-layouts=de utc=no timezone=Asia/Bangkok
     TEXT HELP
         Boot to Kali x64 Live
         User: root, Password: toor
@@ -813,7 +816,7 @@ EOF";
 ########################################
 LABEL DEFT Zero x64
     KERNEL $NFS_ETH0/$DEFTZ_X64/casper/vmlinuz
-    APPEND initrd=$NFS_ETH0/$DEFTZ_X64/casper/initrd.lz netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$DEFTZ_X64 ro file=/cdrom/preseed/ubuntu.seed boot=casper memtest=4 -- debian-installer/language=de console-setup/layoutcode=de keyboard-configuration/layoutcode=de keyboard-configuration/variant=German
+    APPEND initrd=$NFS_ETH0/$DEFTZ_X64/casper/initrd.lz netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$DEFTZ_X64 ro file=/cdrom/preseed/ubuntu.seed boot=casper memtest=4 -- debian-installer/language=de console-setup/layoutcode=en keyboard-configuration/layoutcode=en keyboard-configuration/variant=German
     TEXT HELP
         Boot to DEFT Zero x64 Live
         User: root, Password: toor
@@ -843,7 +846,7 @@ EOF";
 ########################################
 LABEL System Rescue x86
     KERNEL $NFS_ETH0/$SYSTEMRESCTUE_X86/isolinux/rescue32
-    APPEND initrd=$NFS_ETH0/$SYSTEMRESCTUE_X86/isolinux/initram.igz netboot=nfs://$IP_ETH0:$DST_NFS_ETH0/$SYSTEMRESCTUE_X86 ro dodhcp -- setkmap=de
+    APPEND initrd=$NFS_ETH0/$SYSTEMRESCTUE_X86/isolinux/initram.igz netboot=nfs://$IP_ETH0:$DST_NFS_ETH0/$SYSTEMRESCTUE_X86 ro dodhcp -- setkmap=en
     TEXT HELP
         Boot to System Rescue x86 Live
         User: root
@@ -858,7 +861,7 @@ EOF";
 ########################################
 LABEL desinfect x86
     KERNEL $NFS_ETH0/$DESINFECT_X86/casper/vmlinuz
-    APPEND initrd=$NFS_ETH0/$DESINFECT_X86/casper/initrd.lz netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$DESINFECT_X86 ro file=/cdrom/preseed/ubuntu.seed boot=casper memtest=4 rmdns -- debian-installer/language=de console-setup/layoutcode=de keyboard-configuration/layoutcode=de keyboard-configuration/variant=German
+    APPEND initrd=$NFS_ETH0/$DESINFECT_X86/casper/initrd.lz netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$DESINFECT_X86 ro file=/cdrom/preseed/ubuntu.seed boot=casper memtest=4 rmdns -- debian-installer/language=en console-setup/layoutcode=en keyboard-configuration/layoutcode=en keyboard-configuration/variant=German
     TEXT HELP
         Boot to ct desinfect x86
         User: desinfect
@@ -903,9 +906,24 @@ EOF";
         echo  -e "\e[36m    add $RPDESKTOP_X86\e[0m";
         sudo sh -c "cat << EOF  >> $FILE_MENU
 ########################################
+LABEL MINT x64
+    KERNEL $NFS_ETH0/$MINT_X64/casper/vmlinuz.efi
+    APPEND initrd=$NFS_ETH0/$MINT_X64/casper/initrd.lz netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$MINT_X64 ro file=/cdrom/preseed/ubuntu.seed boot=casper -- debian-installer/language=en console-setup/layoutcode=en keyboard-configuration/layoutcode=en keyboard-configuration/variant=English
+    TEXT HELP
+        Boot to Mint Live
+        User: mint
+    ENDTEXT
+EOF";
+    fi
+
+    if [ -f "$FILE_MENU" ] \
+    && [ -f "$DST_NFS_ETH0/$MINT_X86/casper/vmlinuz" ]; then
+        echo  -e "\e[36m    add $MINT_X86\e[0m";
+        sudo sh -c "cat << EOF  >> $FILE_MENU
+########################################
 LABEL Raspberry Pi Desktop
     KERNEL $NFS_ETH0/$RPDESKTOP_X86/live/vmlinuz2
-    APPEND initrd=$NFS_ETH0/$RPDESKTOP_X86/live/initrd2.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$RPDESKTOP_X86 ro boot=live config -- locales=de_DE.UTF-8 keyboard-layouts=de utc=no timezone=Europe/Berlin
+    APPEND initrd=$NFS_ETH0/$RPDESKTOP_X86/live/initrd2.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$RPDESKTOP_X86 ro boot=live config -- locales=en_EN.UTF-8 keyboard-layouts=en utc=no timezone=Asia/Bangkok
     TEXT HELP
         Boot to Raspberry Pi Desktop
         User: pi, Password: raspberry
@@ -920,7 +938,7 @@ EOF";
 ########################################
 LABEL Clonezilla x64
     KERNEL $NFS_ETH0/$CLONEZILLA_X64/live/vmlinuz
-    APPEND initrd=$NFS_ETH0/$CLONEZILLA_X64/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$CLONEZILLA_X64 ro boot=live config username=user hostname=clonezilla union=overlay components noswap edd=on nomodeset nodmraid ocs_live_run=ocs-live-general ocs_live_extra_param= ocs_live_batch=no net.ifnames=0 nosplash noprompt -- locales=de_DE.UTF-8 keyboard-layouts=de utc=no timezone=Europe/Berlin
+    APPEND initrd=$NFS_ETH0/$CLONEZILLA_X64/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$CLONEZILLA_X64 ro boot=live config username=user hostname=clonezilla union=overlay components noswap edd=on nomodeset nodmraid ocs_live_run=ocs-live-general ocs_live_extra_param= ocs_live_batch=no net.ifnames=0 nosplash noprompt -- locales=en_EN.UTF-8 keyboard-layouts=en utc=no timezone=Asia/Bangkok
     TEXT HELP
         Boot to Clonezilla x64
         User: user, Password: live
@@ -935,7 +953,7 @@ EOF";
 ########################################
 LABEL Clonezilla x86
     KERNEL $NFS_ETH0/$CLONEZILLA_X86/live/vmlinuz
-    APPEND initrd=$NFS_ETH0/$CLONEZILLA_X86/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$CLONEZILLA_X86 ro boot=live config username=user hostname=clonezilla union=overlay components noswap edd=on nomodeset nodmraid ocs_live_run=ocs-live-general ocs_live_extra_param= ocs_live_batch=no net.ifnames=0 nosplash noprompt -- locales=de_DE.UTF-8 keyboard-layouts=de utc=no timezone=Europe/Berlin
+    APPEND initrd=$NFS_ETH0/$CLONEZILLA_X86/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$CLONEZILLA_X86 ro boot=live config username=user hostname=clonezilla union=overlay components noswap edd=on nomodeset nodmraid ocs_live_run=ocs-live-general ocs_live_extra_param= ocs_live_batch=no net.ifnames=0 nosplash noprompt -- locales=en_EN.UTF-8 keyboard-layouts=en utc=no timezone=Asia/Bangkok
     TEXT HELP
         Boot to Clonezilla x86
         User: user, Password: live
@@ -953,7 +971,7 @@ EOF";
 ##       https://lukas.zapletalovi.com/2016/08/hidden-feature-of-fedora-24-live-pxe-boot.html
 LABEL Fedora x64
     KERNEL $NFS_ETH0/$FEDORA_X64/isolinux/vmlinuz
-    APPEND initrd=$NFS_ETH0/$FEDORA_X64/isolinux/initrd.img root=live:http://$IP_ETH0$NFS_ETH0/$FEDORA_X64/LiveOS/squashfs.img ro rd.live.image rd.lvm=0 rd.luks=0 rd.md=0 rd.dm=0 vga=794 -- vconsole.font=latarcyrheb-sun16 vconsole.keymap=de-latin1-nodeadkeys locale.LANG=de_DE.UTF-8
+    APPEND initrd=$NFS_ETH0/$FEDORA_X64/isolinux/initrd.img root=live:http://$IP_ETH0$NFS_ETH0/$FEDORA_X64/LiveOS/squashfs.img ro rd.live.image rd.lvm=0 rd.luks=0 rd.md=0 rd.dm=0 vga=794 -- vconsole.font=latarcyrheb-sun16 vconsole.keymap=en-latin1-nodeadkeys locale.LANG=en_DE.UTF-8
     TEXT HELP
         Boot to Fedora Workstation Live
         User: liveuser
@@ -969,7 +987,7 @@ EOF";
 ## NOT WORKING
 LABEL Tails x64
     KERNEL $NFS_ETH0/$TAILS_X64/live/vmlinuz
-    APPEND initrd=$NFS_ETH0/$TAILS_X64/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$TAILS_X64 ro boot=live config loglevel=7 -- break locales=de_DE.UTF-8 keyboard-layouts=de
+    APPEND initrd=$NFS_ETH0/$TAILS_X64/live/initrd.img netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$TAILS_X64 ro boot=live config loglevel=7 -- break locales=en_EN.UTF-8 keyboard-layouts=en
     TEXT HELP
         Boot to Tails x64 Live (modprobe r8169; exit)
     ENDTEXT
@@ -1264,7 +1282,7 @@ handle_network_booting() {
         ##################################################################
         if (echo $FLAGS | grep -q cmdline); then
             echo -e "\e[36m    add cmdline file\e[0m";
-            sudo sh -c "echo 'dwc_otg.lpm_enable=0 console=serial0,115200 console=tty1 plymouth.ignore-serial-consoles root=/dev/nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$RPI_SN0_ROOT,vers=3 rw ip=dhcp rootwait net.ifnames=0 elevator=deadline' > $DST_BOOT/cmdline.txt";
+            sudo sh -c "echo 'dwc_otg.lpm_enable=0 console=serial0,115200 console=tty1 plymouth.ignore-serial-consoles root=/dev/nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$RPI_SN0_ROOT,vers=3 rw ip=dhcp rootwait net.ifnames=0 elevator=enadline' > $DST_BOOT/cmdline.txt";
         fi
 
         ##################################################################
@@ -1340,7 +1358,7 @@ EOF";
                 echo -e "\e[36m    add wpa_supplicant template file\e[0m";
                 sudo sh -c "cat << EOF  > $DST_ROOT/etc/wpa_supplicant/wpa_supplicant.conf
 ########################################
-country=DE
+country=EN
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 
