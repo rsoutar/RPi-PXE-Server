@@ -1600,14 +1600,15 @@ handle_iso  $UBUNTU_LTS_X64     $UBUNTU_LTS_X64_URL;
 #handle_iso  $PENTOO_X64         $PENTOO_X64_URL         timestamping;
 #handle_iso  $SYSTEMRESCTUE_X86  $SYSTEMRESCTUE_X86_URL;
 ##handle_iso  $DESINFECT_X86      $DESINFECT_X86_URL;
-handle_iso  $TINYCORE_x64       $TINYCORE_x64_URL       timestamping;
-handle_iso  $TINYCORE_x86       $TINYCORE_x86_URL       timestamping;
-handle_iso  $RPDESKTOP_X86      $RPDESKTOP_X86_URL;
+#handle_iso  $TINYCORE_x64       $TINYCORE_x64_URL       timestamping;
+#handle_iso  $TINYCORE_x86       $TINYCORE_x86_URL       timestamping;
+#handle_iso  $RPDESKTOP_X86      $RPDESKTOP_X86_URL;
 #handle_iso  $CLONEZILLA_X64     $CLONEZILLA_X64_URL;
 #handle_iso  $CLONEZILLA_X86     $CLONEZILLA_X86_URL;
 #handle_iso  $FEDORA_X64         $FEDORA_X64_URL;
 ##handle_iso  $CENTOS_X64         $CENTOS_X64_URL;
 ##handle_iso  $TAILS_X64          $TAILS_X64_URL;
+handle_iso  $MINT_X64           $MINT_X64_URL
 ######################################################################
 handle_pxe
 
