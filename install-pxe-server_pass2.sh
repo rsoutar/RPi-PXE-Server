@@ -1608,7 +1608,7 @@ handle_iso  $UBUNTU_LTS_X64     $UBUNTU_LTS_X64_URL;
 #handle_iso  $FEDORA_X64         $FEDORA_X64_URL;
 ##handle_iso  $CENTOS_X64         $CENTOS_X64_URL;
 ##handle_iso  $TAILS_X64          $TAILS_X64_URL;
-handle_iso  $MINT_X64           $MINT_X64_URL
+handle_iso  $MINT_X64           $MINT_X64_URL;
 ######################################################################
 handle_pxe
 
