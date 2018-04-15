@@ -907,7 +907,7 @@ EOF";
         sudo sh -c "cat << EOF  >> $FILE_MENU
 ########################################
 LABEL MINT x64
-    KERNEL $NFS_ETH0/$MINT_X64/casper/vmlinuz
+    KERNEL $NFS_ETH0/$MINT_X64/casper/vmlinuz.efi
     APPEND initrd=$NFS_ETH0/$MINT_X64/casper/initrd.lz netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$MINT_X64 ro file=/cdrom/preseed/ubuntu.seed boot=casper -- debian-installer/language=en console-setup/layoutcode=en keyboard-configuration/layoutcode=en keyboard-configuration/variant=English
     TEXT HELP
         Boot to Mint Live
